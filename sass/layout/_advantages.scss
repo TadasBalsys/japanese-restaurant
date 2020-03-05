@@ -1,6 +1,6 @@
 .advantages {
   grid-column: col-start 1 / col-end 12;
-  background-color: rgba($color-green-dark-2, 0.5);
+  @include green-bg;
   display: flex;
   gap: 6rem;
   

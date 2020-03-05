@@ -1,0 +1,71 @@
+.menu {
+  grid-column: col-start 2 / col-end 11;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr repeat(2, min-content) repeat(
+      auto-fil,
+      minmax(min-content, max-content)
+    );
+  @include green-bg;
+  margin: 8rem 0;
+
+  &__heading {
+    grid-column: 1 / -1;
+    justify-self: center;
+    color: $color-font-light;
+    font-size: 4rem;
+    font-weight: 300;
+  }
+
+  & > h2:first-child {
+    margin-top: 7rem;
+  }
+  & > h2:last-of-type {
+    margin-bottom: 7rem;
+  }
+
+  &__img {
+    width: 100%;
+
+    &--right-one {
+      grid-column: 2 / span 1;
+    }
+
+    &--right-two {
+      grid-column: 4 / span 1;
+    }
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &--left-one {
+      grid-area: 4 / 1 / span 1 / span 1;
+    }
+    &--left-two {
+      grid-area: 4 / 3 / span 1 / span 1
+    }
+  }
+
+  &__title {
+    color: $color-font-green;
+    font-family: 'LibreBaskerville';
+    font-size: 2rem;
+  }
+
+  &__text {
+    color: $color-font-light;
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 2rem;
+  }
+
+  &__price {
+    color: $color-white;
+    font-size: 1.6rem;
+    margin-top: 1rem;
+  }
+}

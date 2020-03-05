@@ -1,7 +1,7 @@
 .intro {
   color: $color-font-green;
   grid-column: col-start 1 / col-end 12;
-  background-color: $color-bg-dark;
+  background-color: $color-bg-dark-1;
 
   display: grid;
   grid-template-columns: repeat(4, 1fr);
