@@ -1,0 +1,59 @@
+.advantages {
+  grid-column: col-start 1 / col-end 12;
+  background-color: rgba($color-green-dark-2, 0.5);
+  display: flex;
+  gap: 6rem;
+  
+  &__box {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+
+    &:first-child {
+      margin-left: 12rem;
+    }
+
+    &:last-child {
+      margin-right: 12rem;
+    }
+  }
+
+  &__icon {
+    display: block;
+    height: 4rem;
+    background-size: contain;
+    background-position: center;
+
+    &--one,
+    &--two,
+    &--three {
+      background-repeat: repeat-x;
+      background-image: url('/assets/icons/brush.png');
+      background-position: left;
+    }
+
+    &--one {
+      width: 31px;
+    }
+
+    &--two {
+      width: 60px;
+    }
+
+    &--three {
+      width: 90px;
+    }
+  }
+
+  &__heading {
+    color: $color-font-light;
+    font-size: 2rem;
+    font-family: 'LibreBaskerville';
+    padding: 3rem 0;
+  }
+
+  &__text {
+    color: $color-font-green;
+    font-size: 1.6rem;
+    font-weight: 300;
+  }
+}
