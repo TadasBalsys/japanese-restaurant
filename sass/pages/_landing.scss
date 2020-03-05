@@ -1,5 +1,13 @@
+body {
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  justify-items: center;
+  background-color: $color-bg-dark;
+}
+
 .container {
+  grid-column: 2 / span 1;
   display: grid;
   grid-template-columns: 1fr repeat(12, [col-start] minmax(min-content, 12rem) [col-end]) 1fr;
-  background-color: $color-bg-dark;
+  background-image: url('/assets/images/background-img.png');
 }
