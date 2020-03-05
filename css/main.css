@@ -1,0 +1,157 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("/assets/fonts/montserrat-regular-webfont.woff") format("woff"), url("/assets/fonts/montserrat-regular-webfont.woff2") format("woff2"), url("/assets/fonts/Montserrat-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("/assets/fonts/montserrat-light-webfont.woff") format("woff"), url("/assets/fonts/montserrat-light-webfont.woff2") format("woff2"), url("/assets/fonts/Montserrat-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("/assets/fonts/montserrat-bold-webfont.woff") format("woff"), url("/assets/fonts/montserrat-bold-webfont.woff2") format("woff2"), url("/assets/fonts/Montserrat-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'LibreBaskerville';
+  src: url("/assets/fonts/librebaskerville-regular-webfont.woff") format("woff"), url("/assets/fonts/librebaskerville-regular-webfont.woff2") format("woff2"), url("/assets/fonts/LibreBaskerville-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'LibreBaskerville';
+  src: url("/assets/fonts/librebaskerville-bold-webfont.woff") format("woff"), url("/assets/fonts/librebaskerville-bold-webfont.woff2") format("woff2"), url("/assets/fonts/LibreBaskerville-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Montserrat", sans-serif;
+}
+
+.nav {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-area: 1 / 1 / span 1 / -1;
+}
+
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 3rem;
+  margin-top: 3rem;
+}
+
+.nav__link {
+  color: #9baf6d;
+  font-size: 3rem;
+  margin-right: 5rem;
+  font-weight: 300;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.hero {
+  grid-column: col-start 1 / col-end 12;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  -ms-grid-rows: min-content 58vh;
+      grid-template-rows: -webkit-min-content 58vh;
+      grid-template-rows: min-content 58vh;
+  background-image: url("/assets/hero-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero__container {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-area: 2 / 4 / span 1 / -1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 0 0 15rem 5rem;
+}
+
+.hero__logo {
+  -o-object-fit: none;
+     object-fit: none;
+}
+
+.hero__heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 5rem;
+  color: #9baf6d;
+  text-transform: uppercase;
+  padding-bottom: 4rem;
+  font-family: 'Montserrat';
+  font-weight: 300;
+}
+
+.hero__heading span {
+  font-weight: 700;
+  font-size: 7rem;
+  line-height: 1;
+}
+
+.hero__cta {
+  font-size: 4rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  color: #9baf6d;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 2rem;
+  background-color: rgba(88, 94, 85, 0.7);
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr ([col-start] minmax(min-content, 12rem) [col-end])[12] 1fr;
+      grid-template-columns: 1fr repeat(12, [col-start] minmax(-webkit-min-content, 12rem) [col-end]) 1fr;
+      grid-template-columns: 1fr repeat(12, [col-start] minmax(min-content, 12rem) [col-end]) 1fr;
+  background-color: #212121;
+}
+/*# sourceMappingURL=main.css.map */
