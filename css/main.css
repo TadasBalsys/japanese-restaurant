@@ -63,6 +63,12 @@ html {
   font-family: "Montserrat", sans-serif;
 }
 
+.heading--2 {
+  color: #BCBCBC;
+  font-size: 3.5rem;
+  font-family: "LibreBaskerville";
+}
+
 .heading--3 {
   color: #bcd08e;
   font-family: "LibreBaskerville";
@@ -387,6 +393,104 @@ html {
   font-weight: 300;
   text-align: center;
   margin: 4rem 0;
+}
+
+.new-menu {
+  grid-column: col-start 1 / col-end 12;
+  position: relative;
+}
+
+.new-menu__container {
+  background-color: #6e7969;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(min-content, 1fr))[2];
+      grid-template-columns: repeat(2, minmax(-webkit-min-content, 1fr));
+      grid-template-columns: repeat(2, minmax(min-content, 1fr));
+  gap: 5rem 10rem;
+  justify-items: center;
+  padding-bottom: 5rem;
+  position: absolute;
+  top: 13.5%;
+  width: 100%;
+}
+
+.new-menu__heading {
+  grid-column: 1 / -1;
+}
+
+.new-menu__box {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: min-content 1fr;
+      grid-template-columns: -webkit-min-content 1fr;
+      grid-template-columns: min-content 1fr;
+}
+
+.new-menu__icon {
+  display: block;
+  height: 7.5rem;
+  width: 7.5rem;
+  background-position: center;
+  background-size: unset;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+}
+
+.new-menu__icon--nigiri {
+  background-image: url("/assets/icons/nigiri.png"), -webkit-gradient(linear, left top, right top, from(#c6c6c5), to(#c6c6c5));
+  background-image: url("/assets/icons/nigiri.png"), linear-gradient(to right, #c6c6c5, #c6c6c5);
+}
+
+.new-menu__icon--ramen {
+  background-image: url("/assets/icons/ramen.png"), -webkit-gradient(linear, left top, right top, from(#c6c6c5), to(#c6c6c5));
+  background-image: url("/assets/icons/ramen.png"), linear-gradient(to right, #c6c6c5, #c6c6c5);
+}
+
+.new-menu__icon--sushi {
+  background-image: url("/assets/icons/sushi.png"), -webkit-gradient(linear, left top, right top, from(#c6c6c5), to(#c6c6c5));
+  background-image: url("/assets/icons/sushi.png"), linear-gradient(to right, #c6c6c5, #c6c6c5);
+}
+
+.new-menu__icon--sashimi {
+  background-image: url("/assets/icons/sashimi.png"), -webkit-gradient(linear, left top, right top, from(#c6c6c5), to(#c6c6c5));
+  background-image: url("/assets/icons/sashimi.png"), linear-gradient(to right, #c6c6c5, #c6c6c5);
+}
+
+.new-menu__icon--uramaki {
+  background-image: url("/assets/icons/uramaki.png"), -webkit-gradient(linear, left top, right top, from(#c6c6c5), to(#c6c6c5));
+  background-image: url("/assets/icons/uramaki.png"), linear-gradient(to right, #c6c6c5, #c6c6c5);
+}
+
+.new-menu__icon--sushi-rice {
+  background-image: url("/assets/icons/sushi-rice.png"), -webkit-gradient(linear, left top, right top, from(#c6c6c5), to(#c6c6c5));
+  background-image: url("/assets/icons/sushi-rice.png"), linear-gradient(to right, #c6c6c5, #c6c6c5);
+}
+
+.new-menu__details {
+  width: 80%;
+  margin-left: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.new-menu__title {
+  font-family: "LibreBaskerville";
+  font-size: 1.8rem;
+  color: #BCBCBC;
+}
+
+.new-menu__text {
+  font-size: 1.6rem;
+  color: #bcd08e;
 }
 
 body {

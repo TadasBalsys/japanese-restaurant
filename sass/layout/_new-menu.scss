@@ -1,0 +1,82 @@
+.new-menu {
+  grid-column: col-start 1 / col-end 12;
+  position: relative;
+
+  &__container {
+    background-color: $color-bg-dark-2;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(min-content, 1fr));
+    gap: 5rem 10rem;
+    justify-items: center;
+    padding-bottom: 5rem;
+
+    position: absolute;
+    top: 13.5%;
+
+    // FIXME: There is a way to set full width with grid
+    width: 100%;
+  }
+
+  &__heading {
+    grid-column: 1 / -1;
+  }
+
+  &__box {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+  }
+
+  &__icon {
+    display: block;
+    height: 7.5rem;
+    width: 7.5rem;
+    background-position: center;
+    // FIXME: Do I need size??
+    background-size: unset;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+
+    &--nigiri {
+      background-image:  url('/assets/icons/nigiri.png'), linear-gradient(to right, rgba($color-icon-bg, 1), rgba($color-icon-bg, 1));
+    }
+
+    &--ramen {
+      background-image:  url('/assets/icons/ramen.png'), linear-gradient(to right, rgba($color-icon-bg, 1), rgba($color-icon-bg, 1));
+    }
+
+    &--sushi {
+      background-image:  url('/assets/icons/sushi.png'), linear-gradient(to right, rgba($color-icon-bg, 1), rgba($color-icon-bg, 1));
+    }
+    
+    &--sashimi {
+      background-image:  url('/assets/icons/sashimi.png'), linear-gradient(to right, rgba($color-icon-bg, 1), rgba($color-icon-bg, 1));
+    }
+
+    &--uramaki {
+      background-image:  url('/assets/icons/uramaki.png'), linear-gradient(to right, rgba($color-icon-bg, 1), rgba($color-icon-bg, 1));
+    }
+
+    &--sushi-rice {
+      background-image:  url('/assets/icons/sushi-rice.png'), linear-gradient(to right, rgba($color-icon-bg, 1), rgba($color-icon-bg, 1));
+    }
+  }
+
+  &__details {
+    width: 80%;
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__title {
+    font-family: "LibreBaskerville";
+    font-size: 1.8rem;
+    color: $color-font-light;
+  }
+
+  &__text {
+    font-size: 1.6rem;
+    color: $color-font-green;
+  }
+}
