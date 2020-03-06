@@ -1,0 +1,71 @@
+.book {
+  grid-column: col-start 1 / col-end 12;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__heading {
+    padding-bottom: 3rem;
+  }
+
+  &__form {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(min-content, 1fr));
+    gap: 3.5rem 10vw;
+    justify-content: center;
+  }  
+
+  &__form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  &__label {
+    font-size: 1.4rem;
+    letter-spacing: 1.5px;
+    color: $color-white;
+    padding-bottom: 1rem;
+  }
+
+  &__input,
+  &__input--dropdown,
+  &__submit {
+    border: 1px solid $color-white;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    background-color: $color-bg-dark-1;
+    color: $color-white;
+    font-size: 1.6rem;
+
+    &::placeholder {
+      color: $color-white;
+    }
+  }
+
+  &__input--dropdown {
+    color: $color-font-light;
+    position: relative;
+    appearance: none;
+    background: url('/assets/icons/triangle.png') no-repeat 97% 50%;
+  }
+
+  &__submit {
+    grid-column: 2 / span 1;
+    width: min-content;
+    padding: 0.5rem 3rem;
+    justify-self: center;
+
+    &:hover {
+      color: $color-bg-dark-1;
+      background-color: $color-white;
+    }
+  }
+}
+
+#date {
+  background: url('/assets/icons/calendar.png') no-repeat 98% 48%;
+}
+
+#time {
+  background: url('/assets/icons/clock.png') no-repeat 98% 48%;
+}

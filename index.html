@@ -237,6 +237,74 @@
           </div>
         </div>
       </section>
+      <section class="book margin-bottom-5 margin-top-5">
+        <h2 class="book__heading heading--2">Book here</h2>
+        <form class="book__form" action="#">
+          <div class="book__form-group">
+            <label for="guest-count" class="book__label"
+              >How many people?
+            </label>
+            <select class="book__input--dropdown" id="guest-count">
+              <option value="1">1 people</option>
+              <option value="2">2 people</option>
+              <option value="3">3 people</option>
+              <option value="4">4 people</option>
+              <option value="5">5 people</option>
+              <option value="6">6 people</option>
+            </select>
+          </div>
+
+          <div class="book__form-group">
+            <label for="date" class="book__label">When is your date?</label>
+            <input
+              class="book__input"
+              id="date"
+              type="text"
+              placeholder="06-03-2020"
+            />
+            <i class="book__calendar-icon"></i>
+          </div>
+
+          <div class="book__form-group">
+            <label for="time" class="book__label">Time</label>
+            <input
+              class="book__input"
+              id="time"
+              type="text"
+              placeholder="20:00"
+            />
+          </div>
+
+          <div class="book__form-group">
+            <label for="name" class="book__label">Name</label>
+            <input
+              class="book__input"
+              id="name"
+              type="text"
+              placeholder="Full name"
+            />
+          </div>
+          <div class="book__form-group">
+            <label for="email" class="book__label">Email</label>
+            <input
+              class="book__input"
+              id="email"
+              type="text"
+              placeholder="Your email address"
+            />
+          </div>
+          <div class="book__form-group">
+            <label for="phone" class="book__label">Phone</label>
+            <input
+              class="book__input"
+              id="phone"
+              type="text"
+              placeholder="Your phone"
+            />
+          </div>
+          <input class="book__submit" type="submit" value="Book now" />
+        </form>
+      </section>
     </div>
   </body>
 </html>

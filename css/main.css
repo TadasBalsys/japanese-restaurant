@@ -493,6 +493,112 @@ html {
   color: #bcd08e;
 }
 
+.book {
+  grid-column: col-start 1 / col-end 12;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.book__heading {
+  padding-bottom: 3rem;
+}
+
+.book__form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(min-content, 1fr))[3];
+      grid-template-columns: repeat(3, minmax(-webkit-min-content, 1fr));
+      grid-template-columns: repeat(3, minmax(min-content, 1fr));
+  gap: 3.5rem 10vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.book__form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.book__label {
+  font-size: 1.4rem;
+  letter-spacing: 1.5px;
+  color: #ffffff;
+  padding-bottom: 1rem;
+}
+
+.book__input, .book__input--dropdown, .book__submit {
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  background-color: #212121;
+  color: #ffffff;
+  font-size: 1.6rem;
+}
+
+.book__input::-webkit-input-placeholder, .book__input--dropdown::-webkit-input-placeholder, .book__submit::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+.book__input:-ms-input-placeholder, .book__input--dropdown:-ms-input-placeholder, .book__submit:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.book__input::-ms-input-placeholder, .book__input--dropdown::-ms-input-placeholder, .book__submit::-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.book__input::placeholder, .book__input--dropdown::placeholder, .book__submit::placeholder {
+  color: #ffffff;
+}
+
+.book__input--dropdown {
+  color: #BCBCBC;
+  position: relative;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: url("/assets/icons/triangle.png") no-repeat 97% 50%;
+}
+
+.book__submit {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / span 1;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  padding: 0.5rem 3rem;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.book__submit:hover {
+  color: #212121;
+  background-color: #ffffff;
+}
+
+#date {
+  background: url("/assets/icons/calendar.png") no-repeat 98% 48%;
+}
+
+#time {
+  background: url("/assets/icons/clock.png") no-repeat 98% 48%;
+}
+
 body {
   display: -ms-grid;
   display: grid;
