@@ -17,33 +17,6 @@
     }
   }
 
-  &__icon {
-    display: block;
-    height: 4rem;
-    background-size: contain;
-    background-position: center;
-
-    &--one,
-    &--two,
-    &--three {
-      background-repeat: repeat-x;
-      background-image: url('/assets/icons/brush.png');
-      background-position: left;
-    }
-
-    &--one {
-      width: 31px;
-    }
-
-    &--two {
-      width: 60px;
-    }
-
-    &--three {
-      width: 90px;
-    }
-  }
-
   &__heading {
     color: $color-font-light;
     font-size: 2rem;
