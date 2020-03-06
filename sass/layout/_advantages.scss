@@ -3,17 +3,16 @@
   @include green-bg;
   display: flex;
   gap: 6rem;
+  justify-content: center;
   
   &__box {
     margin-top: 6rem;
     margin-bottom: 6rem;
 
-    &:first-child {
-      margin-left: 12rem;
-    }
-
-    &:last-child {
-      margin-right: 12rem;
+    &--flex {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
   }
 
@@ -28,5 +27,14 @@
     color: $color-font-green;
     font-size: 1.6rem;
     font-weight: 300;
+
+    &--width-60 {
+      width: 50%;
+      color: $color-font-light;
+      font-size: 1.6rem;
+      font-weight: 300;
+      text-align: center;
+      margin: 4rem 0;
+    }
   }
 }
