@@ -8,6 +8,13 @@ body {
 .container {
   grid-column: 2 / span 1;
   display: grid;
-  grid-template-columns: 1fr repeat(12, [col-start] minmax(min-content, 12rem) [col-end]) 1fr;
+  grid-template-columns: 1fr repeat(
+      12,
+      [col-start] minmax(min-content, 12rem) [col-end]
+    ) 1fr;
   background-image: url('/assets/images/background-img.png');
+
+  &__bg-image {
+    grid-column: col-start 1 / col-end 12;
+  }
 }
