@@ -13,9 +13,9 @@ body {
       [col-start] minmax(min-content, 12rem) [col-end]
     ) 1fr;
   background-image: url('/assets/images/background-img.png');
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: bottom;
 
   &__bg-image {
     grid-column: col-start 1 / col-end 12;

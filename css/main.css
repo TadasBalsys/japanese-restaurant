@@ -232,8 +232,8 @@ html {
 }
 
 .card {
-  -ms-flex-preferred-size: 25%;
-      flex-basis: 25%;
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -274,7 +274,7 @@ html {
 }
 
 .card__cta::after {
-  content: "";
+  content: '';
   position: absolute;
   display: inline-block;
   bottom: -15%;
@@ -399,7 +399,11 @@ html {
 .intro {
   color: #bcd08e;
   grid-column: col-start 1 / col-end 12;
-  background-color: #212121;
+  background-image: url("/assets/images/section-one-bg.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  opacity: 0.75;
+  height: 48.5rem;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[4];
@@ -453,6 +457,7 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 5rem 0;
 }
 
 .advantages__box {
@@ -501,7 +506,8 @@ html {
 }
 
 .new-menu__container {
-  background-color: #6e7969;
+  background-color: #444F3F;
+  opacity: 0.95;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (minmax(min-content, 1fr))[2];
@@ -509,7 +515,7 @@ html {
       grid-template-columns: repeat(2, minmax(min-content, 1fr));
   gap: 5rem 10rem;
   justify-items: center;
-  padding-bottom: 5rem;
+  padding: 0 10rem 7rem 10rem;
   position: absolute;
   top: 13.5%;
   width: 100%;
@@ -617,7 +623,7 @@ html {
   -ms-grid-columns: (minmax(min-content, 1fr))[3];
       grid-template-columns: repeat(3, minmax(-webkit-min-content, 1fr));
       grid-template-columns: repeat(3, minmax(min-content, 1fr));
-  gap: 3.5rem 10vw;
+  gap: 4.5rem 10vw;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -702,7 +708,7 @@ html {
 .todays-menu {
   grid-column: col-start 1 / col-end 12;
   background-color: rgba(110, 121, 105, 0.3);
-  padding-bottom: 7rem;
+  padding: 0 12rem 7rem 12rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -838,9 +844,9 @@ body {
       grid-template-columns: 1fr repeat(12, [col-start] minmax(-webkit-min-content, 12rem) [col-end]) 1fr;
       grid-template-columns: 1fr repeat(12, [col-start] minmax(min-content, 12rem) [col-end]) 1fr;
   background-image: url("/assets/images/background-img.png");
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: bottom;
 }
 
 .container__bg-image {

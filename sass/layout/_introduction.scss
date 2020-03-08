@@ -1,8 +1,15 @@
 .intro {
   color: $color-font-green;
   grid-column: col-start 1 / col-end 12;
-  background-color: $color-bg-dark-1;
+  // background-color: transparent;
+  background-image: url('/assets/images/section-one-bg.png');
+  background-repeat: no-repeat;
+  // background-size: cover;
+  background-position: right;
+  opacity: 0.75;
+  height: 48.5rem;
 
+  
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr repeat(2, max-content) 1fr;

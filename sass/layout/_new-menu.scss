@@ -3,12 +3,13 @@
   position: relative;
 
   &__container {
-    background-color: $color-bg-dark-2;
+    background-color: #444F3F;
+    opacity: 0.95;
     display: grid;
     grid-template-columns: repeat(2, minmax(min-content, 1fr));
     gap: 5rem 10rem;
     justify-items: center;
-    padding-bottom: 5rem;
+    padding: 0 10rem 7rem 10rem;
 
     position: absolute;
     top: 13.5%;
