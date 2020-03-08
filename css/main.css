@@ -118,7 +118,7 @@ html {
   -ms-grid-rows: 1fr (min-content)[2] (minmax(min-content, max-content))[auto-fil];
       grid-template-rows: 1fr repeat(2, -webkit-min-content) repeat(auto-fil, minmax(-webkit-min-content, -webkit-max-content));
       grid-template-rows: 1fr repeat(2, min-content) repeat(auto-fil, minmax(min-content, max-content));
-  background-color: rgba(110, 121, 105, 0.5);
+  background-color: rgba(110, 121, 105, 0.3);
   margin: 8rem 0;
 }
 
@@ -285,6 +285,45 @@ html {
   background-color: #5f7e18;
 }
 
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.social-icon {
+  height: 5rem;
+  width: 5rem;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.social-icon:not(:last-child) {
+  margin-right: 2rem;
+}
+
+.social-icon--facebook {
+  background-image: url("/assets/icons/facebook.png");
+}
+
+.social-icon--twitter {
+  background-image: url("/assets/icons/twitter.png");
+}
+
+.social-icon--instagram {
+  background-image: url("/assets/icons/instagram.png");
+}
+
+.social-icon--pinterest {
+  background-image: url("/assets/icons/printerest.png");
+}
+
+.social-icon--google {
+  background-image: url("/assets/icons/google.png");
+}
+
 .hero {
   grid-column: col-start 1 / col-end 12;
   display: -ms-grid;
@@ -406,7 +445,7 @@ html {
 
 .advantages {
   grid-column: col-start 1 / col-end 12;
-  background-color: rgba(110, 121, 105, 0.5);
+  background-color: rgba(110, 121, 105, 0.3);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -662,7 +701,7 @@ html {
 
 .todays-menu {
   grid-column: col-start 1 / col-end 12;
-  background-color: rgba(110, 121, 105, 0.5);
+  background-color: rgba(110, 121, 105, 0.3);
   padding-bottom: 7rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -685,6 +724,100 @@ html {
   margin-right: 6rem;
 }
 
+.testimonials {
+  grid-column: col-start 1 / col-end 12;
+  background-color: rgba(33, 33, 33, 0.3);
+  color: #bcd08e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 7rem 0;
+}
+
+.testimonials__text {
+  font-size: 1.6rem;
+  font-family: "Montserrat";
+  font-weight: 300;
+  width: 60%;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.testimonials__author {
+  font-size: 2rem;
+  font-family: "LibreBaskerville";
+  padding-bottom: 3rem;
+}
+
+.footer {
+  grid-column: col-start 1 / col-end 12;
+  background-color: rgba(110, 121, 105, 0.3);
+  color: #BCBCBC;
+  padding: 7rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (min-content)[2];
+      grid-template-rows: repeat(2, -webkit-min-content);
+      grid-template-rows: repeat(2, min-content);
+}
+
+.footer__heading {
+  font-size: 2rem;
+  padding-bottom: 3rem;
+}
+
+.footer__text {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 2 / 1 / span 1 / span 1;
+  font-size: 1.4rem;
+}
+
+.footer__list {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-area: 2 / 2 / span 1 / span 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  list-style: none;
+}
+
+.footer__link {
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  position: relative;
+}
+
+.footer__link::after {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  bottom: -15%;
+  left: 0;
+  border-radius: 3px;
+  width: 100%;
+  height: 5px;
+  background-color: #5f7e18;
+}
+
 body {
   display: -ms-grid;
   display: grid;
@@ -705,6 +838,9 @@ body {
       grid-template-columns: 1fr repeat(12, [col-start] minmax(-webkit-min-content, 12rem) [col-end]) 1fr;
       grid-template-columns: 1fr repeat(12, [col-start] minmax(min-content, 12rem) [col-end]) 1fr;
   background-image: url("/assets/images/background-img.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .container__bg-image {

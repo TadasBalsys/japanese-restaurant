@@ -1,3 +1,19 @@
 @mixin green-bg {
-  background-color: rgba($color-bg-dark-2, 0.5);
+  background-color: rgba($color-bg-dark-2, 0.3);
+}
+
+@mixin dark-bg {
+  background-color: rgba($color-bg-dark-1, 0.3);
+}
+
+@mixin green-underline {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  bottom: -15%;
+  left: 0;
+  border-radius: 3px;
+  width: 100%;
+  height: 5px;
+  background-color: #5f7e18;
 }

@@ -1,0 +1,32 @@
+.social-icon {
+  height: 5rem;
+  width: 5rem;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+
+  &:not(:last-child) {
+    margin-right: 2rem;
+  }
+
+  &--facebook {
+    background-image: url('/assets/icons/facebook.png');
+  }
+
+  &--twitter {
+  background-image: url('/assets/icons/twitter.png');
+  }
+
+  &--instagram {
+    background-image: url('/assets/icons/instagram.png');
+  }
+
+  &--pinterest {
+    background-image: url('/assets/icons/printerest.png');
+  }
+
+  &--google {
+    background-image: url('/assets/icons/google.png');
+  }
+}
