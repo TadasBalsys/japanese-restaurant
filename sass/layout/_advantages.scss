@@ -1,19 +1,51 @@
 .advantages {
   grid-column: col-start 1 / col-end 12;
   @include green-bg;
-  display: flex;
-  gap: 6rem;
-  justify-content: center;
+  // display: flex;
+  // justify-content: center;
   padding: 5rem 0;
 
+  display: grid;
+  grid-template-columns: minmax(min-content, 8rem) repeat(6, minmax(0, auto)) minmax(
+      min-content,
+      8rem
+    );
+  column-gap: 4rem;
+
   &__box {
-    margin-top: 6rem;
-    margin-bottom: 6rem;
+    margin: 6rem 0;
+    grid-column: auto / span 2;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @include respond-to('laptop') {
+      padding-right: 0;
+      margin: 3rem 0;
+    }
+
+    &--one {
+      grid-column: 2 / span 2;
+    }
+
+    &--one,
+    &--two,
+    &--three {
+      @include respond-to('laptop') {
+        grid-column: 2 / -2;
+      }
+    }
 
     &--flex {
+      grid-column: 2 / -2;
       display: flex;
       flex-direction: column;
       align-items: center;
+
+      @include respond-to('laptop') {
+        
+      }
     }
   }
 
@@ -22,6 +54,10 @@
     font-size: 2rem;
     font-family: 'LibreBaskerville';
     padding: 3rem 0;
+
+    @include respond-to('laptop') {
+      padding: 2.5rem 0;
+    }
   }
 
   &__text {
@@ -30,12 +66,19 @@
     font-weight: 300;
 
     &--width-60 {
-      width: 50%;
+      width: 60%;
       color: $color-font-light;
       font-size: 1.6rem;
       font-weight: 300;
       text-align: center;
       margin: 4rem 0;
+
+      @include respond-to('laptop') {
+        width: 80%;
+      }
+      @include respond-to('tablet') {
+        width: 100%;
+      }
     }
   }
 }

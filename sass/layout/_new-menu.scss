@@ -2,6 +2,13 @@
   grid-column: col-start 1 / col-end 12;
   position: relative;
 
+  &__bg-image {
+    width: 100%;
+    @include respond-to('tablet-s') {
+      height: 108rem;
+    }
+  }
+
   &__container {
     background-color: #444F3F;
     opacity: 0.95;
@@ -9,13 +16,19 @@
     grid-template-columns: repeat(2, minmax(min-content, 1fr));
     gap: 5rem 10rem;
     justify-items: center;
-    padding: 0 10rem 7rem 10rem;
-
+    padding: 7rem 10rem;
     position: absolute;
     top: 13.5%;
-
-    // FIXME: There is a way to set full width with grid
     width: 100%;
+
+    @include respond-to('laptop') {
+      padding: 5rem;
+    }
+
+    @include respond-to('tablet-s') {
+      grid-template-columns: minmax(min-content, 1fr);
+      top: 10.5%;
+    }
   }
 
   &__heading {
@@ -63,7 +76,6 @@
   }
 
   &__details {
-    width: 80%;
     margin-left: 2rem;
     display: flex;
     flex-direction: column;

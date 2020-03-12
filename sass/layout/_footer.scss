@@ -7,6 +7,10 @@
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, min-content);
 
+  @include respond-to('tablet-s') {
+    padding: 5rem;
+  }
+
   &__heading {
     font-size: 2rem;
     padding-bottom: 3rem;
@@ -22,6 +26,15 @@
     display: flex;
     justify-content: space-evenly;
     list-style: none;
+    flex-wrap: wrap;
+    justify-items: center;
+  }
+
+  &__item {
+    text-align: center;
+    @include respond-to('laptop') {
+      flex: 1 0 50%;
+    }
   }
 
   &__link {

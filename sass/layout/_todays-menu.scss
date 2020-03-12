@@ -1,19 +1,21 @@
 .todays-menu {
   grid-column: col-start 1 / col-end 12;
   @include green-bg;
-  // padding-bottom: 7rem;
   padding: 0 12rem 7rem 12rem;
-
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
 
+  @include respond-to('laptop') {
+    padding: 0 7rem 5rem 7rem;
+  }
+  
   &__heading {
    flex: 1 0 100%;
    text-align: center;
   }
 
   & > div:not(:last-child) {
-    margin-right: 6rem;
+    // margin-right: 6rem;
   }
 }

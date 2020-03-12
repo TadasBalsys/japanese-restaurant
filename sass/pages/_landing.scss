@@ -1,17 +1,22 @@
 body {
-  display: grid;
-  grid-template-columns: 1fr max-content 1fr;
-  justify-items: center;
+  // display: grid;
+  // grid-template-columns: 1fr minmax(0, max-content) 1fr;
+  // justify-items: center;
+
+  display: flex;
+  justify-content: center;
+
   background-color: $color-bg-dark-1;
 }
 
 .container {
-  grid-column: 2 / span 1;
+  // grid-column: 2 / span 1;
   display: grid;
-  grid-template-columns: 1fr repeat(
-      12,
-      [col-start] minmax(min-content, 12rem) [col-end]
-    ) 1fr;
+  grid-template-columns: repeat(
+    12,
+    [col-start] minmax(0, 8rem) [col-end]
+  );
+  column-gap: 4rem;
   background-image: url('/assets/images/background-img.png');
   background-size: contain;
   background-repeat: no-repeat;
@@ -19,5 +24,6 @@ body {
 
   &__bg-image {
     grid-column: col-start 1 / col-end 12;
+    width: 100%;
   }
 }

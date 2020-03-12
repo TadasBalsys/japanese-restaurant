@@ -4,15 +4,31 @@
   flex-direction: column;
   align-items: center;
 
+  //  FIXME: For testing purpose. DELETE
+  // @include respond-to('tablet') {
+  //   display: none;
+  // }
+
   &__heading {
     padding-bottom: 3rem;
   }
 
   &__form {
     display: grid;
-    grid-template-columns: repeat(3, minmax(min-content, 1fr));
-    gap: 4.5rem 10vw;
+    grid-template-columns: repeat(auto-fill, minmax(0, 25rem));
+    gap: 4.5rem 10rem;
     justify-content: center;
+    width: 100%;
+    padding: 0 10rem;
+
+    @include respond-to('laptop') {
+      padding: 0;
+    }
+
+    @include respond-to('tablet-s') {
+      padding: 0 2rem;
+      gap: 4.5rem 6rem;
+    }
   }  
 
   &__form-group {
@@ -50,7 +66,7 @@
   }
 
   &__submit {
-    grid-column: 2 / span 1;
+    grid-column: 1 / -1;
     width: min-content;
     padding: 0.5rem 3rem;
     justify-self: center;

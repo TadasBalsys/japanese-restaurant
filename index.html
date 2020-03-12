@@ -10,7 +10,7 @@
     <div class="container">
       <header class="hero">
         <nav class="nav">
-          <ul class="nav__list">
+          <ul id="nav-list" class="nav__list">
             <li class="nav__item">
               <a class="nav__link" href="#">Welcome</a>
             </li>
@@ -23,7 +23,11 @@
             <li class="nav__item">
               <a class="nav__link" href="#">Contact</a>
             </li>
+            <li class="nav__item nav__item--menu"></li>
           </ul>
+          <div id="menu-icon" class="nav__icon-container">
+            <i class="nav__icon"></i>
+          </div>
         </nav>
         <div class="hero__container">
           <img
@@ -39,6 +43,7 @@
         </div>
       </header>
       <section class="intro">
+        <div class="intro__bg-image"></div>
         <h2 class="intro__heading">What do we actually cook</h2>
         <p class="intro__text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
@@ -52,7 +57,7 @@
         /> -->
       </section>
       <section class="advantages">
-        <div class="advantages__box margin-left-12">
+        <div class="advantages__box advantages__box--one">
           <i class="brush-icon brush-icon--one"></i>
           <h4 class="advantages__heading">New tastes</h4>
           <p class="advantages__text">
@@ -60,7 +65,7 @@
             ex ut nam iste doloribus unde!
           </p>
         </div>
-        <div class="advantages__box">
+        <div class="advantages__box advantages__box--two">
           <i class="brush-icon brush-icon--two"></i>
           <h4 class="advantages__heading">New dishes cocking</h4>
           <p class="advantages__text">
@@ -68,7 +73,7 @@
             ex ut nam iste doloribus unde!
           </p>
         </div>
-        <div class="advantages__box margin-right-12">
+        <div class="advantages__box advantages__box--three">
           <i class="brush-icon brush-icon--three"></i>
           <h4 class="advantages__heading">New restaurant</h4>
           <p class="advantages__text">
@@ -130,7 +135,7 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum,
             exercitationem.
           </p>
-          <span class="menu__price">$146.95</span>
+          <span class="menu__price">$14.95</span>
         </div>
         <img
           class="menu__img"
@@ -178,7 +183,7 @@
           alt="Japanese food"
         />
         <div class="new-menu__container">
-          <h2 class="new-menu__heading heading--2 margin-top-5">
+          <h2 class="new-menu__heading heading--2">
             Discover our new menu
           </h2>
           <div class="new-menu__box">
@@ -308,8 +313,10 @@
         alt="Sushi"
       />
       <section class="todays-menu">
-        <h2 class="todays-menu__heading heading--2 margin-top-5 margin-bottom-5">
-          Todays specials
+        <h2
+          class="todays-menu__heading heading--2 margin-top-5 margin-bottom-5"
+        >
+          Today's specials
         </h2>
         <div class="card">
           <img
@@ -359,7 +366,11 @@
       </section>
       <section class="testimonials">
         <i class="testimonials__icon brush-icon brush-icon--one"></i>
-        <p class="testimonials__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis corporis inventore placeat libero a dolor necessitatibus ipsum iure magni beatae? Accusantium, quam.</p>
+        <p class="testimonials__text">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis
+          corporis inventore placeat libero a dolor necessitatibus ipsum iure
+          magni beatae? Accusantium, quam.
+        </p>
         <span class="testimonials__author">Linda Steward</span>
         <div class="social">
           <i class="social-icon social-icon--facebook"></i>
@@ -371,22 +382,28 @@
       </section>
       <footer class="footer">
         <h6 class="footer__heading">About</h6>
-        <p class="footer__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore vero enim assumenda minima illum quis dolorem a repellendus fugit, porro illo eligendi aliquid atque, soluta vitae ea iure dolor incidunt quaerat impedit architecto. Aspernatur!</p>
+        <p class="footer__text">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore vero
+          enim assumenda minima illum quis dolorem a repellendus fugit, porro
+          illo eligendi aliquid atque, soluta vitae ea iure dolor incidunt
+          quaerat impedit architecto. Aspernatur!
+        </p>
         <ul class="footer__list">
           <li class="footer__item">
-            <a class="footer__link" href="#" >Team</a>
+            <a class="footer__link" href="#">Team</a>
           </li>
           <li class="footer__item">
-            <a class="footer__link" href="#" >Join us</a>
+            <a class="footer__link" href="#">Join us</a>
           </li>
           <li class="footer__item">
-            <a class="footer__link" href="#" >Ethic</a>
+            <a class="footer__link" href="#">Ethic</a>
           </li>
           <li class="footer__item">
-            <a class="footer__link" href="#" >Goals</a>
+            <a class="footer__link" href="#">Goals</a>
           </li>
         </ul>
       </footer>
     </div>
+    <script type="module" src="/js/main.js"></script>
   </body>
 </html>

@@ -9,6 +9,16 @@
   @include green-bg;
   margin: 8rem 0;
 
+  @include respond-to('laptop') {
+    // grid-template-columns: repeat(2, minmax(min-content, max-content));
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr repeat(2, min-content) repeat(
+        auto-fil,
+        minmax(min-content, max-content)
+      );
+    grid-auto-flow: dense;
+  }
+
   &__heading {
     grid-column: 1 / -1;
     justify-self: center;
@@ -20,19 +30,17 @@
   & > h2:first-child {
     margin-top: 7rem;
   }
+
   & > h2:last-of-type {
     margin-bottom: 7rem;
   }
 
   &__img {
     width: 100%;
-
-    &--right-one {
-      grid-column: 2 / span 1;
-    }
-
-    &--right-two {
-      grid-column: 4 / span 1;
+    @include respond-to('laptop') {
+      &:nth-of-type(even) {
+        grid-column: 2 / span 1;
+      }
     }
   }
 
@@ -42,11 +50,22 @@
     justify-content: center;
     align-items: center;
 
-    &--left-one {
-      grid-area: 4 / 1 / span 1 / span 1;
+    @include respond-to('laptop') {
+      justify-content: space-evenly;
+
+      &:nth-of-type(even) {
+        grid-column: 1 / span 1;
+      }
     }
-    &--left-two {
-      grid-area: 4 / 3 / span 1 / span 1
+
+    @media only screen and (min-width: 65em) {
+      &--left-one {
+        grid-area: 4 / 1 / span 1 / span 1;
+      }
+
+      &--left-two {
+        grid-area: 4 / 3 / span 1 / span 1;
+      }
     }
   }
 

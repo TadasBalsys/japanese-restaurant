@@ -46,6 +46,19 @@
 html {
   font-size: 62.5%;
   font-family: "Montserrat", sans-serif;
+
+  // @include respond-to('laptop-l') {
+  //   font-size: 56.25%;
+  // }
+
+  @include respond-to('laptop') {
+    font-size: 56.25%;
+  }
+
+  @include respond-to('mobile-l') {
+    font-size: 50%;
+  }
+
 }
 
 .heading--2 {
@@ -58,4 +71,5 @@ html {
   color: $color-font-green;
   font-family: "LibreBaskerville";
   font-size: 3rem;
+  text-align: center;
 }
