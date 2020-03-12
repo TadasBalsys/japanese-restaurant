@@ -1,16 +1,10 @@
 body {
-  // display: grid;
-  // grid-template-columns: 1fr minmax(0, max-content) 1fr;
-  // justify-items: center;
-
   display: flex;
   justify-content: center;
-
   background-color: $color-bg-dark-1;
 }
 
 .container {
-  // grid-column: 2 / span 1;
   display: grid;
   grid-template-columns: repeat(
     12,
@@ -21,6 +15,10 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom;
+
+  @include respond-to('mobile-m') {
+    column-gap: 0;
+  }
 
   &__bg-image {
     grid-column: col-start 1 / col-end 12;

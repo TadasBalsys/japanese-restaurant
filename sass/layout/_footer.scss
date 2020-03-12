@@ -11,6 +11,10 @@
     padding: 5rem;
   }
 
+  @include respond-to('mobile-m') {
+    padding: 3rem;
+  }
+
   &__heading {
     font-size: 2rem;
     padding-bottom: 3rem;

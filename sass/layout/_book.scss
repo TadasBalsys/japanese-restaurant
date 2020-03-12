@@ -4,11 +4,6 @@
   flex-direction: column;
   align-items: center;
 
-  //  FIXME: For testing purpose. DELETE
-  // @include respond-to('tablet') {
-  //   display: none;
-  // }
-
   &__heading {
     padding-bottom: 3rem;
   }
@@ -29,13 +24,19 @@
       padding: 0 2rem;
       gap: 4.5rem 6rem;
     }
-  }  
+
+    @include respond-to('mobile-l') {
+      padding: 0;
+      gap: 4.5rem 0;
+      grid-template-columns: repeat(auto-fill, minmax(0, 35rem));
+    }
+  }
 
   &__form-group {
     display: flex;
     flex-direction: column;
   }
-  
+
   &__label {
     font-size: 1.4rem;
     letter-spacing: 1.5px;

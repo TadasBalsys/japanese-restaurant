@@ -29,6 +29,11 @@
       grid-template-columns: minmax(min-content, 1fr);
       top: 10.5%;
     }
+
+    @include respond-to('mobile-m'){
+      top: 9%;
+      padding: 3rem;
+    }
   }
 
   &__heading {
