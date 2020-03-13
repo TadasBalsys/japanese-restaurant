@@ -72,35 +72,35 @@ li {
 
 @font-face {
   font-family: 'Montserrat';
-  src: url("/assets/fonts/montserrat-regular-webfont.woff") format("woff"), url("/assets/fonts/montserrat-regular-webfont.woff2") format("woff2"), url("/assets/fonts/Montserrat-Regular.ttf") format("truetype");
+  src: url("../assets/fonts/montserrat-regular-webfont.woff") format("woff"), url("../assets/fonts/montserrat-regular-webfont.woff2") format("woff2"), url("../assets/fonts/Montserrat-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Montserrat';
-  src: url("/assets/fonts/montserrat-light-webfont.woff") format("woff"), url("/assets/fonts/montserrat-light-webfont.woff2") format("woff2"), url("/assets/fonts/Montserrat-Light.ttf") format("truetype");
+  src: url("../assets/fonts/montserrat-light-webfont.woff") format("woff"), url("../assets/fonts/montserrat-light-webfont.woff2") format("woff2"), url("../assets/fonts/Montserrat-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Montserrat';
-  src: url("/assets/fonts/montserrat-bold-webfont.woff") format("woff"), url("/assets/fonts/montserrat-bold-webfont.woff2") format("woff2"), url("/assets/fonts/Montserrat-Bold.ttf") format("truetype");
+  src: url("../assets/fonts/montserrat-bold-webfont.woff") format("woff"), url("../assets/fonts/montserrat-bold-webfont.woff2") format("woff2"), url("../assets/fonts/Montserrat-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'LibreBaskerville';
-  src: url("/assets/fonts/librebaskerville-regular-webfont.woff") format("woff"), url("/assets/fonts/librebaskerville-regular-webfont.woff2") format("woff2"), url("/assets/fonts/LibreBaskerville-Regular.ttf") format("truetype");
+  src: url("../assets/fonts/librebaskerville-regular-webfont.woff") format("woff"), url("../assets/fonts/librebaskerville-regular-webfont.woff2") format("woff2"), url("../assets/fonts/LibreBaskerville-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'LibreBaskerville';
-  src: url("/assets/fonts/librebaskerville-bold-webfont.woff") format("woff"), url("/assets/fonts/librebaskerville-bold-webfont.woff2") format("woff2"), url("/assets/fonts/LibreBaskerville-Bold.ttf") format("truetype");
+  src: url("../assets/fonts/librebaskerville-bold-webfont.woff") format("woff"), url("../assets/fonts/librebaskerville-bold-webfont.woff2") format("woff2"), url("../assets/fonts/LibreBaskerville-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
@@ -421,7 +421,7 @@ html {
 
 .brush-icon--one, .brush-icon--two, .brush-icon--three {
   background-repeat: repeat-x;
-  background-image: url("/assets/icons/brush.png");
+  background-image: url("../assets/icons/brush.png");
   background-position: left;
 }
 
@@ -574,23 +574,23 @@ html {
 }
 
 .social-icon--facebook {
-  background-image: url("/assets/icons/facebook.png");
+  background-image: url("../assets/icons/facebook.png");
 }
 
 .social-icon--twitter {
-  background-image: url("/assets/icons/twitter.png");
+  background-image: url("../assets/icons/twitter.png");
 }
 
 .social-icon--instagram {
-  background-image: url("/assets/icons/instagram.png");
+  background-image: url("../assets/icons/instagram.png");
 }
 
 .social-icon--pinterest {
-  background-image: url("/assets/icons/printerest.png");
+  background-image: url("../assets/icons/pinterest.png");
 }
 
 .social-icon--google {
-  background-image: url("/assets/icons/google.png");
+  background-image: url("../assets/icons/google.png");
 }
 
 .hero {
@@ -602,7 +602,7 @@ html {
   -ms-grid-rows: min-content max-content;
       grid-template-rows: -webkit-min-content -webkit-max-content;
       grid-template-rows: min-content max-content;
-  background-image: url("/assets/images/hero-bg.png");
+  background-image: url("../assets/images/hero-bg.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -753,7 +753,7 @@ html {
 }
 
 .intro__bg-image {
-  background-image: url("/assets/images/section-one-bg.png");
+  background-image: url("../assets/images/section-one-bg.png");
   background-repeat: no-repeat;
   background-position: right;
   background-size: contain;
@@ -1044,33 +1044,33 @@ html {
 }
 
 .new-menu__icon--nigiri {
-  background-image: url("/assets/icons/nigiri.png"), -webkit-gradient(linear, left top, right top, from(#c6c6c5), to(#c6c6c5));
-  background-image: url("/assets/icons/nigiri.png"), linear-gradient(to right, #c6c6c5, #c6c6c5);
+  background-image: url("../assets/icons/nigiri.png"), -webkit-gradient(linear, left top, right top, from(#c6c6c5), to(#c6c6c5));
+  background-image: url("../assets/icons/nigiri.png"), linear-gradient(to right, #c6c6c5, #c6c6c5);
 }
 
 .new-menu__icon--ramen {
-  background-image: url("/assets/icons/ramen.png"), -webkit-gradient(linear, left top, right top, from(#c6c6c5), to(#c6c6c5));
-  background-image: url("/assets/icons/ramen.png"), linear-gradient(to right, #c6c6c5, #c6c6c5);
+  background-image: url("../assets/icons/ramen.png"), -webkit-gradient(linear, left top, right top, from(#c6c6c5), to(#c6c6c5));
+  background-image: url("../assets/icons/ramen.png"), linear-gradient(to right, #c6c6c5, #c6c6c5);
 }
 
 .new-menu__icon--sushi {
-  background-image: url("/assets/icons/sushi.png"), -webkit-gradient(linear, left top, right top, from(#c6c6c5), to(#c6c6c5));
-  background-image: url("/assets/icons/sushi.png"), linear-gradient(to right, #c6c6c5, #c6c6c5);
+  background-image: url("../assets/icons/sushi.png"), -webkit-gradient(linear, left top, right top, from(#c6c6c5), to(#c6c6c5));
+  background-image: url("../assets/icons/sushi.png"), linear-gradient(to right, #c6c6c5, #c6c6c5);
 }
 
 .new-menu__icon--sashimi {
-  background-image: url("/assets/icons/sashimi.png"), -webkit-gradient(linear, left top, right top, from(#c6c6c5), to(#c6c6c5));
-  background-image: url("/assets/icons/sashimi.png"), linear-gradient(to right, #c6c6c5, #c6c6c5);
+  background-image: url("../assets/icons/sashimi.png"), -webkit-gradient(linear, left top, right top, from(#c6c6c5), to(#c6c6c5));
+  background-image: url("../assets/icons/sashimi.png"), linear-gradient(to right, #c6c6c5, #c6c6c5);
 }
 
 .new-menu__icon--uramaki {
-  background-image: url("/assets/icons/uramaki.png"), -webkit-gradient(linear, left top, right top, from(#c6c6c5), to(#c6c6c5));
-  background-image: url("/assets/icons/uramaki.png"), linear-gradient(to right, #c6c6c5, #c6c6c5);
+  background-image: url("../assets/icons/uramaki.png"), -webkit-gradient(linear, left top, right top, from(#c6c6c5), to(#c6c6c5));
+  background-image: url("../assets/icons/uramaki.png"), linear-gradient(to right, #c6c6c5, #c6c6c5);
 }
 
 .new-menu__icon--sushi-rice {
-  background-image: url("/assets/icons/sushi-rice.png"), -webkit-gradient(linear, left top, right top, from(#c6c6c5), to(#c6c6c5));
-  background-image: url("/assets/icons/sushi-rice.png"), linear-gradient(to right, #c6c6c5, #c6c6c5);
+  background-image: url("../assets/icons/sushi-rice.png"), -webkit-gradient(linear, left top, right top, from(#c6c6c5), to(#c6c6c5));
+  background-image: url("../assets/icons/sushi-rice.png"), linear-gradient(to right, #c6c6c5, #c6c6c5);
 }
 
 .new-menu__details {
@@ -1199,7 +1199,7 @@ html {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  background: url("/assets/icons/triangle.png") no-repeat 97% 50%;
+  background: url("../assets/icons/triangle.png") no-repeat 97% 50%;
 }
 
 .book__submit {
@@ -1218,11 +1218,11 @@ html {
 }
 
 #date {
-  background: url("/assets/icons/calendar.png") no-repeat 98% 48%;
+  background: url("../assets/icons/calendar.png") no-repeat 98% 48%;
 }
 
 #time {
-  background: url("/assets/icons/clock.png") no-repeat 98% 48%;
+  background: url("../assets/icons/clock.png") no-repeat 98% 48%;
 }
 
 .todays-menu {
@@ -1402,7 +1402,7 @@ body {
       grid-template-columns: repeat(12, [col-start] minmax(0, 8rem) [col-end]);
   -webkit-column-gap: 4rem;
           column-gap: 4rem;
-  background-image: url("/assets/images/background-img.png");
+  background-image: url("../assets/images/background-img.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom;

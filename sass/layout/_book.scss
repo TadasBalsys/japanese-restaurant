@@ -63,7 +63,7 @@
     color: $color-font-light;
     position: relative;
     appearance: none;
-    background: url('/assets/icons/triangle.png') no-repeat 97% 50%;
+    background: url('../assets/icons/triangle.png') no-repeat 97% 50%;
   }
 
   &__submit {
@@ -80,9 +80,9 @@
 }
 
 #date {
-  background: url('/assets/icons/calendar.png') no-repeat 98% 48%;
+  background: url('../assets/icons/calendar.png') no-repeat 98% 48%;
 }
 
 #time {
-  background: url('/assets/icons/clock.png') no-repeat 98% 48%;
+  background: url('../assets/icons/clock.png') no-repeat 98% 48%;
 }
